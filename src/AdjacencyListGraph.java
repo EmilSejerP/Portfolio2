@@ -49,10 +49,10 @@ public class AdjacencyListGraph {
         Integer counter = 0;
         HashMap<String, Boolean> map = new HashMap<>();
         ArrayList<Edge> MST = new ArrayList<Edge>();
+
         for(int i = 0; i < vertices.size();i++){
             map.put(vertices.get(i).getName(),visited[i]);
         }
-
 
         while(counter < vertices.size()){
 
@@ -77,5 +77,7 @@ public class AdjacencyListGraph {
                 }
             }
         }
+
+
     }
 }
